@@ -1,0 +1,36 @@
+.navbar {
+    padding: 0.81rem;
+    box-shadow: 4.05px;
+}
+.logo-img {
+    width: 3.6rem;
+    height: 2.25rem;
+}
+.logo-head {
+    margin-left: 0.405rem;
+    margin-right: 0.405rem;
+    font-size: 1.0125rem;
+}
+.ul-list a {
+    margin: 0.405rem;
+    padding: 0.405rem;
+    font-size: 0.81rem;
+}
+.profile-img {
+    width: 2.43rem;
+    border: 1.62px #19cbb6 solid;
+}
+.icons {
+    margin-right: 0.405rem;
+    margin-left: 0.405rem;
+}
+.icons a i {
+    font-size: 0.81rem; 
+    margin: 0.6075rem;
+}
+.btn-online {
+    margin: 0.405rem;
+    padding: 0.2025rem;
+    border-radius: 8.1px;
+    font-size: 0.81rem;
+}

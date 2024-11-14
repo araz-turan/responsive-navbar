@@ -1,0 +1,100 @@
+header {
+    max-height: 55px;
+    box-shadow: 3px 3px 3px 3px #e9eaea;
+}
+.navbar{
+    grid-template-columns: 50% 5% 30%;
+}
+.icons a i {
+    margin: 0.3rem;
+}
+.icons .dropdown .more-icon {
+    display: none;
+}
+.icons .dropdown .dropdown-content {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    width: 0;
+    border-radius: 0;
+}
+.icons .dropdown:hover .dropdown-content{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    width: 0;
+    border-radius: 0;
+}
+.icons .dropdown .dropdown-content a:hover {
+    display: flex;
+    border-radius: 1rem;
+}
+.icons .dropdown .dropdown-content a {
+    border: none;
+}
+.icons .dropdown .dropdown-content a h6 {
+    display: none;
+} 
+#hidden-icon {
+    display: inline-flex;
+    position: absolute;
+    right: 10rem;
+    top: 2rem;
+    visibility: hidden;
+}
+.ul-list-ch .line {
+    display: flex;
+    width: 0.64rem;
+    margin-bottom: 0.1rem;
+    border: 0.01rem black solid;
+}
+.ul-list-ch label {
+    position: absolute;
+    top: 2rem;
+    right: 10rem;
+}
+#hidden-icon:checked + label .line-mid {
+    transform: translateX(10px);
+    opacity: 0;
+}
+#hidden-icon:checked + label .line-top {
+    transform: rotate(60deg);
+    position: absolute;
+    top: 0.25rem;
+    transition: all 150ms ease-out;
+}
+#hidden-icon:checked + label .line-btm {
+    transform: rotate(-60deg);
+    position: absolute;
+    top: 0.25rem;
+    transition: all 150ms ease-out;
+}
+.ul-list-ch .ul-list {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    left: 0.64rem;
+    background: #f7f7f7;
+    min-width: 9rem;
+    height: 100%;
+    padding: 0.5rem;
+    list-style-type: none;
+    z-index: 1;
+    transform: translateX(-350px);
+    transition: all 250ms ease-in;
+}
+#hidden-icon:checked + label + ul {
+    transform: translateX(0);
+}
+.ul-list li {
+    padding: 1rem;
+}
+.ul-list a {
+    margin: 0.405rem;
+    padding: 0.405rem;
+    font-size: 0.81rem;
+}
